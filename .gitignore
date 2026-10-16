@@ -1,0 +1,35 @@
+# Environment & Secrets (Crucial: never commit API keys)
+.env
+.env.*
+*.env
+token.json
+not_need/
+"not need/"
+not_need
+"not need"
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# IDE & Editor artifacts
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS artifacts
+Thumbs.db
+.DS_Store
+
+# Temporary logs
+*.log
