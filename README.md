@@ -8,9 +8,8 @@
 [![Docker](https://img.shields.io/badge/Docker-One--Command%20Deploy-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 
 > **AMD Developer Hackathon: ACT III (October 2026)**  
-> **Primary Track:** Track 2 — Health & Wellbeing (*Healthy Vihar*, Rural Bihar Maternal & Infant IoT Clinics)  
-> **Partner Track:** Evolus Business Agents on AMD Instinct  
-> **Principal Author:** Diwakar Sharma (*Healthy Vihar Foundation*, Supaul / Saharsa / Madhepura, Bihar, India)
+> **Primary Track:** Evolus Business Agents on AMD Instinct  
+> **Principal Author:** Diwakar Sharma 
 
 ---
 
@@ -21,17 +20,14 @@
 
 ---
 
-## 🎯 Executive Summary & The Rural Healthcare Crisis
+## 🎯 Executive Summary
 
-In the flood-prone Kosi and Seemanchal river basins of Northern Bihar (including **Supaul, Saharsa, and Madhepura** districts), primary healthcare centers (PHCs) and maternal clinics operate in an unforgiving operating environment:
-* **The Infrastructure Reality:** 14-hour daily grid blackouts, extreme summer temperatures, and unreliable solar backup systems.
-* **The Edge Cryptographic Failure:** Continuous telemetry monitors (infant incubators, ECG monitors, pulse oximeters) running on ARM Cortex-M4 microcontrollers cannot sustain enterprise ciphers like **AES-128-GCM** (which consume $54.6\ \mu\text{J}$ per packet, exhausting CR2032 coin cells in under 4 months). Edge developers often bypass encryption entirely, transmitting plaintext patient records over unsecured sub-GHz radios.
-* **The Physical Vulnerability:** Severe power sags and brownouts induce physical register bit-flips during permutation routines, causing cryptographic de-synchronization and opening side-channel vulnerabilities.
-
-### The Ascon-Guard AI Solution
-**Ascon-Guard AI** solves this existential crisis by coupling the newly standardized **NIST SP 800-232 Ascon-128 AEAD** cipher on edge microcontrollers with cloud-accelerated neural cryptanalysis hosted on **AMD Instinct MI300X accelerators** and orchestrated via the **Evolus Business Agent Framework**.
-
+As modern technologies evolve at breakneck speed, the global proliferation of Internet of Things (IoT) devices is transforming connected healthcare. From continuous wearable electrocardiograms (ECGs) and smart pulse oximeters to wireless infant telemetry monitors and distributed clinical diagnostic sensors, connected healthcare demands seamless, ultra-reliable telemetry. However, this explosive growth has triggered an acute **Edge Cryptographic Bottleneck**:
+* **Exponential IoT Demand vs. Silicon Energy Constraints:** The modern medical IoT ecosystem demands real-time continuous data transmission from billions of battery-operated edge devices (powered by compact ARM Cortex-M microcontrollers and coin-cell batteries). Yet, traditional enterprise ciphers like **AES-128-GCM** consume a prohibitive $54.6\ \mu\text{J}$ per packet and demand heavy silicon area, exhausting miniature batteries in under 4 months and forcing firmware developers to dangerously bypass encryption altogether or transmit raw plaintext telemetry.
+* **The Dangerous Truncation Compromise:** In an effort to prolong battery lifespans across smart healthcare deployments, engineers and compromised firmware frequently truncate cryptographic rounds (e.g., executing 4 rounds instead of 12), drastically degrading diffusion margins and leaving unquenched linear hulls that adversarial AI models can easily exploit to forge physician dosage commands or decrypt sensitive patient vitals.
+* **Physical Hardware & Dynamic Side-Channel Anomalies:** Operating across diverse, real-world field conditions—ranging from thermal throttling to transient voltage sags and power brownouts—modern IoT microcontrollers experience physical bit-flips during state permutation phases. These anomalies de-synchronize cryptographic round constants and create microscopic side-channel leakage that traditional static rulebooks fail to detect.
 ---
+**Ascon-Guard AI** bridges this divide by uniting the newly designated global standard for lightweight cryptography—**NIST SP 800-232 Ascon-128 AEAD**—with hardware-accelerated cloud neural cryptanalysis powered by **AMD Instinct MI300X accelerators** and orchestrated via the **Evolus Business Agent Framework**. By performing continuous, calibrated algebraic audits with sub-second latency, Ascon-Guard AI enables end-to-end mathematical security for next-generation medical IoT infrastructure without sacrificing battery longevity.
 
 ## 🏗️ End-to-End System Architecture
 
@@ -253,11 +249,7 @@ Empirical physical benchmarks recorded on an **STM32L476RG (ARM Cortex-M4 @ 80 M
 ## 🏆 Hackathon Eligibility & Compliance
 
 * **AMD Developer Hackathon ACT III:** Powered by **AMD Instinct MI300X** high-memory cloud accelerators using ROCm 6.2 and vLLM.
-* **Track 2 (Health & Wellbeing):** Protects sensitive maternal and neonatal telehealth records across underserved primary clinics in Bihar, India.
-* **Evolus Partner Track:** Implements the complete Evolus Business Agent lifecycle with multi-agent orchestration and human-in-the-loop triaging.
+* **Evolus Track:** Implements the complete Evolus Business Agent lifecycle with multi-agent orchestration and human-in-the-loop triaging.
 * **Uncertainty Calibration:** Fully complies with the hackathon requirement by explicitly refusing to guess when confidence drops below 90.0%.
 
 ---
-
-## 📜 License & Acknowledgments
-Licensed under the Apache 2.0 License. Built with pride for the mothers, infants, and healthcare heroes of Bihar, India.
