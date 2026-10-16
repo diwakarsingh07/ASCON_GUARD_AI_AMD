@@ -1,3 +1,5 @@
+<img width="1080" height="565" alt="Main_Banner_AMD_ACT3--02--10-_voxzvl8qes9og2rlse35sxez" src="https://github.com/user-attachments/assets/1171c414-4c7c-4506-942f-afd7e21438f2" />
+
 # 🛡️ Ascon-Guard AI: Autonomous Cryptanalysis, Hardware-Accelerated Verification & Resilient Multi-Agent Orchestration for NIST SP 800-232 Ascon-128 in Rural Bihar Medical IoT
 
 [![AMD Instinct](https://img.shields.io/badge/Hardware-AMD%20Instinct%20MI300X-ED1C24?style=for-the-badge&logo=amd&logoColor=white)](https://www.amd.com/en/products/accelerators/instinct/mi300/mi300x.html)
