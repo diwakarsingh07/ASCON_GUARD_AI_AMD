@@ -17,11 +17,7 @@
 ## 📑 Official Project Deliverables & Links
 
 * 📄 **Complete Architectural Monograph (Google Docs):**  
-  👉 **[Open Live Google Doc](https://docs.google.com/document/d/1crexxtCMr4X3FjWIQC83YSrxRoDZ3-_x9KuZejXVLH0/edit?usp=sharing)**)*
-* 📊 **Official Pitch & Architecture Presentation (Google Slides):**  
-  👉 **[Open Live Google Slides Deck](https://docs.google.com/presentation/d/1q2du7nOglhrbh3yeQ3oB6DUdmYNylehhmtGxisejsgg/edit)** *(ID: `1q2du7nOglhrbh3yeQ3oB6DUdmYNylehhmtGxisejsgg`)*
-* 📥 **Publication-Grade Research PDF:**  
-  👉 **[`Ascon_Guard_AI_Comprehensive_System_Guide.pdf`](Ascon_Guard_AI_Comprehensive_System_Guide.pdf)** *(Compiled in root directory)*
+  👉 **[Open Live Google Doc](https://docs.google.com/document/d/1crexxtCMr4X3FjWIQC83YSrxRoDZ3-_x9KuZejXVLH0/edit?usp=sharing)**)
 
 ---
 
